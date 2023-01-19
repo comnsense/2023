@@ -24,7 +24,7 @@
     "prettier-plugin-astro": "^0.5.5",
     "prettier-plugin-tailwindcss": "^0.1.13"
   },
-  "description": "",
+  "description": "[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)",
   "main": "index.astro",
   "repository": {
     "type": "git",
