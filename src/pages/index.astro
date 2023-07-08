@@ -52,19 +52,19 @@ import Prank from '../components/RickRoll.astro';
         anime({
           targets: '#splash',
           scaleY: 0,
-          duration: 1400,
+          duration: 1200,
           easing: 'easeInOutExpo',
           delay: 1700,
         });
-        anime({ targets: '#zl', color: '#fff', zIndex: 0, duration: 100, delay: 2400 });
+        anime({ targets: '#zl', color: '#fff', zIndex: 0, duration: 100, delay: 100 });
 
         anime({
           targets: '#title',
-          translateY: ['150%', 0],
+          translateY: ['100%', 0],
           opacity: [0, 1],
-          duration: 300,
+          duration: 100,
           easing: 'easeInOutQuad',
-          delay: 2400,
+          delay: 400,
         });
 
         // smooth scrolling
@@ -88,7 +88,7 @@ import Prank from '../components/RickRoll.astro';
         scroll.addListener(() => {
           thumb.style.opacity = '1';
           clearTimeout(timeout);
-          timeout = setTimeout(() => (thumb.style.opacity = '0'), 2000);
+          timeout = setTimeout(() => (thumb.style.opacity = '0'), 1500);
         });
 
         // nami (I mean navigation)
@@ -114,10 +114,10 @@ import Prank from '../components/RickRoll.astro';
         const emailInstance = tippy('#email', {
           content: 'Copy',
           theme: 'light',
-          hideOnClick: false,
+          hideOnClick: true,
           touch: true,
           onHidden: (e) => e.setContent('Copy'),
-        })[0];
+        })[1];
 
         // copy email
         const copyEmail = document.getElementById('email') as HTMLElement;
